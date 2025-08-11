@@ -184,6 +184,7 @@ export interface SmartEngine {
 - Accent 2: #6CCA6C
 - Background Light: #FCFCFC
 - Background Dark: #121212
+- Icon background: linear-gradient(135deg, #4ed96a 0%, #007e26 100%);
 
 ---
 

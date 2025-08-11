@@ -4,6 +4,12 @@
   "private": false,
   "type": "module",
   "main": "src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
   "license": "MIT"
 }
 
