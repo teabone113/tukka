@@ -1,0 +1,27 @@
+name: Spec sync check
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            code:
+              - 'apps/**'
+              - 'packages/**'
+            spec:
+              - 'tukka_mvp_spec.md'
+              - 'docs/**'
+
+      - name: Fail if code changed without spec update
+        if: steps.filter.outputs.code == 'true' && steps.filter.outputs.spec == 'false'
+        run: |
+          echo "Code changed but the spec was not updated. Please update tukka_mvp_spec.md (or explain and make a minimal touch) so newcomers stay in sync." && exit 1
+
+

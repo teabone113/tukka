@@ -1,0 +1,27 @@
+# Node/PNPM/Yarn
+node_modules/
+.pnp*
+
+# Next.js
+.next/
+out/
+.vercel/
+
+# Expo/Capacitor/Native
+ios/
+android/
+*.xcworkspace/
+*.xcodeproj/
+Pods/
+*.pbxproj
+build/
+dist/
+
+# Misc
+.DS_Store
+*.log
+.env*
+.idea/
+.vscode/
+
+
