@@ -16,12 +16,12 @@ jobs:
               - 'apps/**'
               - 'packages/**'
             spec:
-              - 'tukka_mvp_spec.md'
+              - 'docs/tukka_mvp_spec.md'
               - 'docs/**'
 
       - name: Fail if code changed without spec update
         if: steps.filter.outputs.code == 'true' && steps.filter.outputs.spec == 'false'
         run: |
-          echo "Code changed but the spec was not updated. Please update tukka_mvp_spec.md (or explain and make a minimal touch) so newcomers stay in sync." && exit 1
+          echo "Code changed but the spec was not updated. Please update docs/tukka_mvp_spec.md (or explain and make a minimal touch) so newcomers stay in sync." && exit 1
 
 

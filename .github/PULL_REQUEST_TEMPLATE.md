@@ -23,7 +23,7 @@ Add visuals where helpful.
 
 ## Checklist
 
-- [ ] Updated `tukka_mvp_spec.md` or justified no-spec-change
+- [ ] Updated `docs/tukka_mvp_spec.md` or justified no-spec-change
 - [ ] Works offline after first load (PWA) where applicable
 - [ ] Import UX handles JSON‑LD only and shows clear CORS/anti-bot errors
 - [ ] No schema changes without migration notes
