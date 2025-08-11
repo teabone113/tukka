@@ -1,0 +1,16 @@
+{
+  "name": "tukka",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "cd apps/web && npm run dev",
+    "build:web": "cd apps/web && npm run build",
+    "start:web": "cd apps/web && npm start",
+    "format": "echo 'add prettier later'"
+  }
+}
+
+

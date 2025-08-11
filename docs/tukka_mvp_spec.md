@@ -176,6 +176,14 @@ export interface SmartEngine {
 - Shopping list groups by simple name; tap item → show original lines that contributed.
 - Metric default; imperial is display-only (no conversions guaranteed in MVP).
  - If web import fails due to site restrictions (CORS/anti-bot), show a friendly message with guidance and offer manual add. On mobile, imports use native HTTP for better success.
+  
+### 5.1) Brand Colors
+- Primary: #00A600
+- Primary Dark: #24B224
+- Accent 1: #48BE48
+- Accent 2: #6CCA6C
+- Background Light: #FCFCFC
+- Background Dark: #121212
 
 ---
 
